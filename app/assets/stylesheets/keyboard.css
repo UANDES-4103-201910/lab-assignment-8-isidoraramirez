@@ -11,6 +11,10 @@ html {
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: center;
+	position:fixed;
+	bottom: 0;
+	width: 95%;
+	padding-left: 2%;
 }
 
 .keyboard_row {
@@ -24,8 +28,10 @@ html {
 	display: flex;
 	background-color: #fff
 	width: 100%;
-	color: #00ff00;
+	color: #00F900;
 	flex: 1;
+	position:fixed;
+
 }
 
 .key {
@@ -44,7 +50,7 @@ html {
 }
 .holder {
 	font-family: sans-serif;
-	color: #ffffff;
+	color: #00F900;
 	font-size: 30px;
 }
 
