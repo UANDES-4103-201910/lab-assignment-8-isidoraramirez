@@ -2315,3 +2315,10 @@ Processing by KeyboardDemosController#demo1 as HTML
 Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-05-09 19:58:52 -0400
+Processing by KeyboardDemosController#demo1 as HTML
+  Rendering keyboard_demos/demo1.html.erb within layouts/application
+  Rendered keyboard_demos/demo1.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 307ms (Views: 300.0ms | ActiveRecord: 0.0ms)
+
+
