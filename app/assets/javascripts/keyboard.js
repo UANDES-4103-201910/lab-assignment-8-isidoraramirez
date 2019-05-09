@@ -3,10 +3,21 @@ $(() => {
 	console.log('Document ready! [app/assets/javascripts/keyboard.js]');
 	$('.key').click(function(){
 
-		var textadded = ""
-		textadded =  $('#output').text() + textadded + $(this).text();
+		var textadded = "";
+		var keytoggled = $(this).text();
+		if ( keytoggled == "Bksp"){
+			textadded = $('#output').text().slice(0,-1);
+		}
+		else if (keytoggled == "Enter"){
+			b = document.createElement('br');
+			textadded =  $('#output').text() + ' <p>'+ '</p>' ;
+
+		}
+		else {
+			textadded =  $('#output').text() + textadded + $(this).text();
+   		}
    		console.log($(this).text());
-   		$('#output').text(textadded) ;
+   		$('#output').html(textadded) ;
    		
      });
 
